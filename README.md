@@ -140,6 +140,8 @@ Install **ESP32-BLE-Gamepad by lemmingDev**.
 - Steam also provides features like Calibration, deadzone avoidance, sensitivity to match user preference.
 - Also can be used for various applications such as drone controller, Wireless Embedded Designs such as toy cars, robotic arm, etc working with Bluetooth.
 
+>Press Windows+R and type joy.cpl to view custom gaming HID controller. Calibrate it with Windows settings 
+
 > **Tip:** If Windows cached a previous (broken) HID descriptor, unpair the device, then in Device Manager → **View → Show hidden devices** → **Human Interface Devices**, delete any ghost entries for "ESP32 Gamepad", then re-pair.
 
 ---
@@ -189,7 +191,6 @@ The firmware drives one row LOW at a time and reads all column pins. A column re
 |---|---|---|
 | Device doesn't appear in Bluetooth scan | Not advertising yet | Wait ~5 s after power-on; LED should blink |
 | Pairs but axes don't move | Wrong ADC pins / joystick not powered | Check VCC/GND on joystick; confirm GPIO 34/35/32/33 |
-| Press Windows+R and type joy.cpl to view custom gaming HID controller. Calibrate it with Windows settings | 
 | Axis snaps to max immediately | Old cached HID descriptor on Windows | Unpair → delete ghost in Device Manager → re-pair |
 | Buttons not registering | Matrix wiring | Confirm row pins are OUTPUT, col pins are INPUT_PULLUP |
 | Left stick drifts at rest | Joystick not centered during boot calibration | Power cycle with sticks untouched for first ~2 s |
