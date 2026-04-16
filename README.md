@@ -21,8 +21,7 @@ Build your own Bluetooth gamepad with an ESP32 — pairs natively as HID, no dri
 
 ![Build photo](docs/images/build.jpeg)
 
-> 📸 _Photos and demo video coming soon — hardware is breadboarded and fully functional._
-
+> 📸 Demo video : [YouTube](https://www.youtube.com/watch?v=eiI4kB0I978)
 ---
 
 ## ✨ Features
